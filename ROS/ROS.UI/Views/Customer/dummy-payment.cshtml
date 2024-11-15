@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Customer/CustomerDashboard.cshtml";
+}
+
+
+<body >
+    <div class="login-box" style="margin-left:20em;">
+        <div class="card card-primary" >
+            <div class="card-header text-center">
+                <h1 class="h3">Dummy Payment Page</h1>
+            </div>
+            <div class="card-body">
+                <p class="text-center">Payment Amount: <strong><span id="amount" class="text-success"></span></strong></p>
+                <button onclick="OnlinePayment()" class="btn btn-block btn-success">
+                    <i class="fas fa-check-circle mr-2"></i>Confirm Payment
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/customer-cart.js"></script>
+    <script>
+        var total_Cost = sessionStorage.getItem('Total_Cost');
+        document.getElementById('amount').innerHTML = `${total_Cost}`;
+    </script>
+</body>

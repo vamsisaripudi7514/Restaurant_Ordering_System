@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Customer/CustomerDashboard.cshtml";
+}
+
+<body>
+    <div id="content">
+
+        <div id="orders">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">YOUR ORDERS</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered" id="customer-orders-table">
+                    <thead>
+                        <tr>
+                            <th>Menu Item</th>
+                            <th>Quantity</th>
+                            <th>Order Value</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>  </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <h1 id="user-info-form"></h1>
+    <script src="~/js/customer-orders.js"></script>
+</body>

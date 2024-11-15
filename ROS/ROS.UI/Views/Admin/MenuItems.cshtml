@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Menu";
+    Layout = "~/Views/Admin/AdminDashboard.cshtml";
+}
+
+<body>
+    <div id="menu-items">
+        
+                <section class="content-header">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">MENU</h3>
+                            <div style="margin-left:50em;">
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="/admin/additem">Add Item</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <div class="card-body">
+            <table class="table table-bordered" id="menu-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>  </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="~/js/admin-menu.js"></script>
+</body>

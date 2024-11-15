@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Customer/CustomerDashboard.cshtml";
+}
+<body>
+    <div id="content">
+
+        <div id="orders">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">MENU ITEMS</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered" id="customer-menu-table">
+                    <thead>
+                        <tr>
+                            <th>ITEM NAME</th>
+                            <th>PRICE</th>
+                            <th>QUANTITY</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>  </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="itemDescriptionPopup" tabindex="-1" role="dialog" style="display:none;z-index:1050; ">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="popupTitle">Item Title</h4>
+                    <button type="button" class="close" onclick="closePopup()" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="popupDescription">Item description goes here...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/customer-menu-selection.js"></script>
+    <style>
+        #itemDescriptionPopup {
+            display: none;
+            position: fixed;
+            top: 3em;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            align-items: center;
+            justify-content: center;
+            z-index: 1050;
+        }
+
+            #itemDescriptionPopup .modal-dialog {
+                max-width: 500px;
+                margin: auto;
+            }
+    </style>
+</body>

@@ -1,0 +1,74 @@
+<!-- Main Content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Example of a card for the menu section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Menu</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- Menu items will be dynamically populated here -->
+                            <div id="menu-items">
+                                <!-- Menu items example -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Item Name</th>
+                                            <th>Price</th>
+                                            <th>Availability</th>
+                                            <th>Quantity</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- This will be populated dynamically with JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cart Section -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Cart</h3>
+                        </div>
+                        <div class="card-body" id="cart">
+                            <!-- Cart contents will be dynamically populated here -->
+                            <div id="cart-items">
+                                <p>No items in cart.</p>
+                            </div>
+                            <p id="total">Total: $0.00</p>
+                            <button class="btn btn-success" onclick="placeOrder()">Place Order</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+             <script>
+        // Extract customerId and totalAmount from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const customerId = urlParams.get("customerId");
+        const totalAmount = urlParams.get("totalAmount");
+
+        document.getElementById("amount").textContent = totalAmount;
+
+        async function confirmPayment() {
+            const paymentData = { Customer_ID: customerId, Total_Amount: parseFloat(totalAmount), Payment_Status: true };
+
+            const response = await fetch(`http://localhost:5222/api/payment/add-to-payments/${customerId}/${totalAmount}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(paymentData)
+            });
+
+            if (response.ok) {
+                alert("Payment successful!");
+                window.location.href = "http://localhost:3000/order-summary"; // Redirect to a summary page
+            } else {
+                alert("Payment failed. Please try again.");
+            }
+        }

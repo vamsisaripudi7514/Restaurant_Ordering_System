@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Customer/CustomerDashboard.cshtml";
+}
+<body>
+    <div class="login-box" style="margin-left:20em;">
+        <div class="card card-primary">
+            <div class="card-header text-center">
+                <h3 class="card-title">Select Payment Method</h3>
+            </div>
+            <div class="card-body">
+                <p class="text-center">Please choose your preferred payment method:</p>
+                <button onclick="OnlinePaymentRedirect()" class="btn btn-success btn-block mb-3">Online Payment</button>
+                <button onclick="CashPayment()" class="btn btn-secondary btn-block">Cash Payment</button>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/customer-cart.js"></script>
+</body>

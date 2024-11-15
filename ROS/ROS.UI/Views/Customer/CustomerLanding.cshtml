@@ -1,0 +1,103 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Views/Customer/CustomerDashboard.cshtml";
+}
+
+<body>
+    <section class="hero-section">
+        <div>
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Order Your Favorite Dishes Online. Quick, Easy, and Delicious!</p>
+            <button class="btn-cta" onclick="window.location.href='customer/menu-selection'">Browse Menu</button>
+        </div>
+    </section>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .hero-section {
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+            .hero-section h1 {
+                font-size: 4em;
+                margin-bottom: 20px;
+            }
+            .hero-section p {
+                font-size: 1.5em;
+            }
+        .btn-cta {
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .btn-cta:hover {
+                background-color: #218838;
+                cursor: pointer;
+            }
+
+        .feature-cards {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+        .feature-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+            .feature-card h3 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+            }
+            .feature-card p {
+                font-size: 1.1em;
+            }
+        .testimonial-section {
+            background-color: #f1f1f1;
+            padding: 50px;
+            text-align: center;
+        }
+            .testimonial-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+            .testimonial-card p {
+                font-size: 1.1em;
+                margin-bottom: 20px;
+            }
+            .testimonial-card h5 {
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+    </style>
+</body>

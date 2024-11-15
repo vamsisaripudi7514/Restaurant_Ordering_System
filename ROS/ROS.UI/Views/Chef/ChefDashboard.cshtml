@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Chef Dashboard";
+    //Layout = null; // Disable the default layout
+    Layout = "~/Views/Chef/ChefLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Dashboard</title>
+    <!-- Include AdminLTE CSS -->
+    <link rel="stylesheet" href="~/AdminLTE/css/adminlte.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="~/AdminLTE/css/adminlte.min.css">
+    <!-- Add other CSS files as needed -->
+    <!-- Include jQuery -->
+    <script src="~/AdminLTE/js/adminlte.min.js"></script>
+    <!-- Include Bootstrap -->
+    <script src="~/AdminLTE/js/popper.min.js"></script>
+    <!-- Include AdminLTE JS -->
+    <script src="~/AdminLTE/js/adminlte.js"></script>
+    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <script src="~/AdminLTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="~/AdminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+</head>
+<body>
+
+    <h1>@ViewData["Title"]</h1>
+     
+    <div id="content"> 
+
+        <div id="pending-orders" >
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">PENDING ORDERS</h3>
+                </div>
+             </div>
+                <div class="card-body">
+                    <table class="table table-bordered" id="pending-orders-table">
+                        <thead>
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Menu Item</th>
+                                <th>Quantity</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>  </tbody>
+                    </table>
+                </div>
+
+        </div>
+
+        <div id="served-orders" style="display: none;">
+
+                <div class="card-header">
+                    <h3 class="card-title">SERVED ORDERS</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered" id="served-orders-table">
+                        <thead>
+                            <tr>
+                            <th>Customer Name</th>
+                            <th>Menu Item</th>
+                            <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>  </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+    </div>
+
+    <script src="~/js/chefDashboard.js"></script>
+
+</body>
+</html>
