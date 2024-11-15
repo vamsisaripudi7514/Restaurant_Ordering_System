@@ -3,6 +3,6 @@ This repository contains the implementation of a restaurant ordering system, dev
 
 - Vamsi Saripudi
 - Ayush Kumar Nilesh Kumar Patel
-- Jaswant Sai Bondalapati
+- Jaswanth Sai Bondalapati
 - Ajay Talluri
 
