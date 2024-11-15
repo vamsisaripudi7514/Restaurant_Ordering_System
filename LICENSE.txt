@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2024  Vamsi Saripudi, Ayush Kumar Nilesh Kumar Patel, Jaswant Sai Bondalapati, Ajay Talluri.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+----------------------------------------------------------------------------------------------------
+
+ACKNOWLEDGEMENTS
+
+This project uses AdminLTE, licensed under the MIT License. Copyright (c) 2014-2023 ColorlibHQ.
