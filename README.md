@@ -6,3 +6,4 @@ This repository contains the implementation of a restaurant ordering system, dev
 - Jaswanth Sai Bondalapati
 - Ajay Talluri
 
+please go throught the license.txt file before you make use of this project
