@@ -11,9 +11,9 @@ please go throught the license.txt file before you make use of this project.
 STEPS TO RUN THE PROJECT:
 1)Download Visual Studio 2022.
 	URL: https://visualstudio.microsoft.com/downloads/
-2)Install Visual Studio 2022 and select "Web Api development" during installation setup.
-3)Download and install MySQL server. 
-	URL: https://dev.mysql.com/downloads/installer/
+ 2)Install Visual Studio 2022 and select "Web Api development" during installation setup.
+ 3)Download and install MySQL server. 
+ 	URL: https://dev.mysql.com/downloads/installer/
 4)Download and install MySQL workbench. 
 	URL: https://www.mysql.com/products/workbench/
 5)Run sql script provided in CreateDB.sql,LoadDB.sql files of "sql files" folder, in the workbench to setup the database.
@@ -24,7 +24,7 @@ STEPS TO RUN THE PROJECT:
 10)This time select ROS.UI in the startup item and run the project using start button.
 11)This starts runs the user interface of the application. Now the application is running and ready to be used.
 Note: To access admin and chef dashboard use the following URLS.
- Admin Dashboard: http://localhost:5140/admin
- Chef Dashboard: http://localhost:5140/chef
-	--->change the port number in the above links if the project runs on a different port.
+	Admin Dashboard: http://localhost:5140/admin
+ 	Chef Dashboard: http://localhost:5140/chef
+  	--->change the port number in the above links if the project runs on a different port.
 
