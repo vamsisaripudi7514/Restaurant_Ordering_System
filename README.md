@@ -7,7 +7,7 @@ This repository contains the implementation of a restaurant ordering system, dev
 - Ajay Talluri
 
 please go throught the license.txt file before you make use of this project.
-
+<pre>
 STEPS TO RUN THE PROJECT:<br>
 1)Download Visual Studio 2022.<br>
 	URL: https://visualstudio.microsoft.com/downloads/<br>
@@ -27,4 +27,4 @@ Note: To access admin and chef dashboard use the following URLS.<br>
 	Admin Dashboard: http://localhost:5140/admin<br>
  	Chef Dashboard: http://localhost:5140/chef<br>
   	--->change the port number in the above links if the project runs on a different port.<br>
-
+</pre>
